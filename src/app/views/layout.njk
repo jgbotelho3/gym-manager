@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    
+
+    {% block head %}
+     <title>Gym Manager</title>
+    {% endblock %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="/instructors">Instrutores</a>
+        <a href="/members">Membros</a>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <script src="/script.js"></script>
+  </body>
+</html>
